@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+/* font-family: 'Zen Dots', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+/* font-family: 'Quicksand', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+.container {
+  animation-name: load;
+  animation-timing-function: linear;
+  animation-duration: .5s;
+}
+
+@keyframes load {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.container-bg {
+  background: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container-content {
+  position: absolute;
+  text-align: center;
+  top: 25vh;
+  margin: 0 25vw;
+  transition: linear 2s;
+}
+
+.container-content h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  font-family: 'Zen Dots', cursive;
+color: #000;
+}
+
+.para {
+color: #000;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 70px;
+}
+
+.btn {
+  padding: 1rem;
+  width: 250px;
+  background: transparent;
+  border: solid #000 2px;
+color: #000;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn:hover{
+  color: #000;
+  transition: all ease-in-out .5s;
+  background-color: #fff;
+  transition: all ease-in-out .5s;
+  border: #fff 1px solid;
+}
+.btn:focus {
+  outline: none;
+}

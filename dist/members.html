@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/70856632d3.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="member.css" />
+		<title>Member Card | AdMath</title>
+	</head>
+	<body>
+	<div class="body">
+    	<nav class="navbar">
+			<h1 class="brand"><a href="index.html">AdMath</a></h1>
+		</nav>
+	<div class="form-container" id="form">
+    	<form class="form"  target="_blank" method="GET">
+			<div class="form-group">
+        <div class="form-control">
+          <label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname" placeholder="Enter FirstName " autocomplete="off"/>
+        </div>
+        <div class="form-control">
+          <label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname" placeholder="Enter LastName" autocomplete="off"/>
+        </div>
+			</div>
+			<div class="form-group">
+        <div class="form-control">
+          <label for="date">Date of Birth</label>
+        <input type="date" name="dob" id="dob" required />
+        </div>
+        <div class="form-control">
+          <label for="genderselect">Gender</label>
+			<select name="genderSelect" id="genderSelect" class="dropdown">
+        <option value="" disabled selected></option>
+				<option value="Male" class="gender">Male</option>
+				<option value="Female" class="gender">Female</option>
+				<option value="Other" class="gender">Other</option>
+			</select>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="email">Email</label>
+        	<input type="email" name="email" id="email" placeholder="email@yourdomain.com"/>
+      </div>
+        <div class="form-control">
+          <label for="message" class="message">Message</label>
+          <textarea name="message" id="message" cols="80" rows="10" placeholder="Why do you want to join AdMath"></textarea>
+        <input type="submit" value="Join AdMath" id="submit" class="">
+        </div>
+		</form>
+  </div>
+  <div class="welcome" id="welcome">
+    <h1 class="welcome-title">Thanks for Submiting</h1>
+    <p class="welcome-message">Welcome <span id="name"></span> to AdMath. We are glad to accept you into our community!</p>
+    <input type="button" value="Resubmit" class="button" id="resubmit">
+  </div>
+  </div>
+		<script src="main.js"></script>
+	</body>
+</html>

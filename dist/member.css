@@ -1,0 +1,163 @@
+@import 'style.css';
+*{
+  margin: 0;
+  padding: 0;
+}
+.body{
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/watercolor.png');
+  height: 100vh;
+}
+/* Navigation Bar */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#9e9696bb ;
+  color: #000;
+  height: 40px;
+}
+.brand{
+  font-size: 2rem;
+  font-family: 'Zen Dots', cursive;
+  letter-spacing: 2px;
+  margin-left: 20px;
+}
+
+/*Form*/
+.form-container{
+  display: block;
+  width: 600px;
+  margin-right: auto;
+  background-color: rgba(143, 139, 139, 0.5);
+  border-radius: 5px;
+  border: 1px solid #fff;
+  margin-left: auto;
+   margin-top: 30px;
+}
+.form{
+  padding: 20px  0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Quicksand',sans-serif;
+}
+input{
+  background-color: #fff;
+  font-family: 'Quicksand',sans-serif;
+}
+input:focus, select:focus, textarea:focus{
+  outline: none;
+}
+.form-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+/*FullName Inputs*/
+.form-control{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  margin-bottom: 10px;
+}
+.form-control label{
+  margin-bottom: 3px;
+}
+.form-control:first-child{
+   margin-right: 20px;
+}
+.form-group:first-child input{
+height: 20px;
+width: 240px;
+padding: 5px;
+border:  1px solid #fff;
+}
+input:focus{
+  background-color: #fff;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*DOB and Gender*/
+input[type = date]{
+  width: 300px;
+  height: 20px;
+  padding: 5px;
+  border: #fff solid 1px;
+}
+input[type=date]:invalid::-webkit-datetime-edit {
+  color: #999;
+}
+select{
+  width:190px ;
+  padding: 5px;
+  font-family: 'Quicksand', sans-serif;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+option{
+  height: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/*Email*/
+input[type =email]{
+  width: 505px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+/*Textarea Message*/
+textarea{
+  resize: none;
+  border: 1px #fff solid;
+  font-family: 'Quicksand', sans-serif;
+  font-size: .8rem;
+  padding: 10px;
+}
+
+/* Submit button input*/
+input[type = submit]{
+align-self: flex-start;
+margin-top: 20px;
+height: 30px;
+width: 200px;
+border: 1px #fff solid;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+/*Welcome Message*/
+.welcome{
+  font-family: 'Quicksand', sans-serif;
+  margin-top: 100px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ec7171bb;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 200px;
+  padding: 10px;
+}
+.welcome-title{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.welcome-message{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.button{
+  width: 200px;
+  height: 30px;
+  text-transform: uppercase;
+  padding: 5px;
+  border: #fff 1px solid;
+}
